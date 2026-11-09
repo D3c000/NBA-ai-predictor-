@@ -227,13 +227,24 @@ def main():
     if st.button("🔄 Refresh data"):
         get_json.clear()
         st.rerun()
-    eastern = dt.datetime.now(EAST).date()
     now = dt.datetime.now(dt.timezone.utc)
+    today_nz = now.astimezone(NZ).date()
+    eastern = now.astimezone(EAST).date()
     upcoming = []
     live_count = 0
     try:
-        for day in (eastern, eastern + dt.timedelta(days=1)):
+        # ESPN groups games by US Eastern date. Query adjacent dates and
+        # filter by the actual tipoff date in New Zealand.
+        seen_ids = set()
+        for day in (eastern - dt.timedelta(days=1), eastern, eastern + dt.timedelta(days=1)):
             for event in events_on(day):
+                event_id = str(event.get("id", ""))
+                if event_id in seen_ids:
+                    continue
+                seen_ids.add(event_id)
+                tipoff = dt.datetime.fromisoformat(event["date"].replace("Z", "+00:00"))
+                if tipoff.astimezone(NZ).date() != today_nz:
+                    continue
                 status = event.get("status", {}).get("type", {})
                 if status.get("completed"):
                     continue
@@ -242,23 +253,22 @@ def main():
                     continue
                 if status.get("state") != "pre":
                     continue
-                tipoff = dt.datetime.fromisoformat(event["date"].replace("Z", "+00:00"))
                 if tipoff > now:
                     upcoming.append(event)
     except (requests.RequestException, ValueError, KeyError) as exc:
         st.error(f"Could not load NBA schedule: {exc}")
         show_tracker_history()
         return
-    st.caption(f"Updated {dt.datetime.now(NZ):%d %b %Y, %I:%M %p} NZ · {len(upcoming)} pre-game matchups · {live_count} live games excluded")
+    st.caption(f"Today in NZ: {today_nz:%d %b %Y} · Updated {dt.datetime.now(NZ):%I:%M %p} · {len(upcoming)} upcoming games today · {live_count} live games excluded")
     if not upcoming:
-        st.info("No upcoming pre-game matchups in the current two-day NBA window. Check again later.")
+        st.info("No more NBA games are scheduled to start today in New Zealand. Tomorrow’s games will only appear tomorrow (NZ time).")
         show_tracker_history()
         return
     with st.spinner("Analysing recent NBA results..."):
         events, schedule_failures = completed_history(eastern)
     history = team_history(events)
     games = [result for event in upcoming if (result := game_prediction(event, history))]
-    st.subheader("🏆 Top 5 game predictions")
+    st.subheader("🏆 Today’s top 5 game predictions")
     if games:
         for i, g in enumerate(sorted(games, key=lambda x: x["confidence"], reverse=True)[:5], 1):
             card(f"#{i} · {g['matchup']}", g["winner"],
@@ -266,7 +276,7 @@ def main():
         st.caption("Percentages are uncalibrated model estimates, not proven win probabilities.")
     else:
         st.info("Not enough recent team data for reliable baseline projections.")
-    st.subheader("⭐ Top 5 player projections")
+    st.subheader("⭐ Today’s top 5 player projections")
     st.caption("Ranked by recent statistical consistency, not by betting value. Different stat types are not directly comparable.")
     with st.spinner("Analysing recent player performances..."):
         players, box_failures = player_projections(events, upcoming)
