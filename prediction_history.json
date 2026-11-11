@@ -272,18 +272,21 @@
     "status": "final"
   },
   "401909965": {
-    "actual_winner": null,
+    "actual_winner": "Portland Trail Blazers",
+    "away_score": 103.0,
     "away_team": "Oklahoma City Thunder",
-    "correct": null,
+    "checked_at": "2026-11-11T07:47:52.614456+00:00",
+    "correct": true,
     "estimated_probability": 0.5336,
     "game_id": "401909965",
     "game_time": "2026-11-11T04:00Z",
+    "home_score": 123.0,
     "home_team": "Portland Trail Blazers",
     "model": "recent-form-heuristic-v1",
     "predicted_margin_home": 1.55,
     "predicted_winner": "Portland Trail Blazers",
     "saved_at": "2026-11-09T00:49:03.032448+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909966": {
     "actual_winner": null,
