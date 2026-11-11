@@ -187,18 +187,21 @@
     "status": "final"
   },
   "401909960": {
-    "actual_winner": null,
+    "actual_winner": "New York Knicks",
+    "away_score": 85.0,
     "away_team": "Milwaukee Bucks",
-    "correct": null,
+    "checked_at": "2026-11-11T03:20:07.944321+00:00",
+    "correct": true,
     "estimated_probability": 0.7228,
     "game_id": "401909960",
     "game_time": "2026-11-11T00:30Z",
+    "home_score": 117.0,
     "home_team": "New York Knicks",
     "model": "recent-form-heuristic-v1",
     "predicted_margin_home": 11.02,
     "predicted_winner": "New York Knicks",
     "saved_at": "2026-11-09T00:49:03.032391+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909961": {
     "actual_winner": null,
