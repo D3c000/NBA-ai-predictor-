@@ -204,18 +204,21 @@
     "status": "final"
   },
   "401909961": {
-    "actual_winner": null,
+    "actual_winner": "Boston Celtics",
+    "away_score": 123.0,
     "away_team": "Boston Celtics",
-    "correct": null,
+    "checked_at": "2026-11-11T04:27:32.543181+00:00",
+    "correct": true,
     "estimated_probability": 0.5414,
     "game_id": "401909961",
     "game_time": "2026-11-11T01:00Z",
+    "home_score": 101.0,
     "home_team": "Philadelphia 76ers",
     "model": "recent-form-heuristic-v1",
     "predicted_margin_home": -1.91,
     "predicted_winner": "Boston Celtics",
     "saved_at": "2026-11-09T00:49:03.032407+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909962": {
     "actual_winner": null,
