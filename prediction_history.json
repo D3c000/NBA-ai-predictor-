@@ -425,32 +425,38 @@
     "status": "final"
   },
   "401909974": {
-    "actual_winner": null,
+    "actual_winner": "Houston Rockets",
+    "away_score": 108.0,
     "away_team": "Golden State Warriors",
-    "correct": null,
+    "checked_at": "2026-11-12T05:42:50.877669+00:00",
+    "correct": true,
     "estimated_probability": 0.585,
     "game_id": "401909974",
     "game_time": "2026-11-12T02:30Z",
+    "home_score": 115.0,
     "home_team": "Houston Rockets",
     "model": "recent-form-heuristic-v1",
     "predicted_margin_home": 3.95,
     "predicted_winner": "Houston Rockets",
     "saved_at": "2026-11-09T09:02:02.041568+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909975": {
-    "actual_winner": null,
+    "actual_winner": "Portland Trail Blazers",
+    "away_score": 108.0,
     "away_team": "Oklahoma City Thunder",
-    "correct": null,
+    "checked_at": "2026-11-12T05:42:50.877669+00:00",
+    "correct": false,
     "estimated_probability": 0.5043,
     "game_id": "401909975",
     "game_time": "2026-11-12T03:00Z",
+    "home_score": 118.0,
     "home_team": "Portland Trail Blazers",
     "model": "recent-form-heuristic-v1",
     "predicted_margin_home": -0.2,
     "predicted_winner": "Oklahoma City Thunder",
     "saved_at": "2026-11-09T20:46:39.889125+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909976": {
     "actual_winner": null,
