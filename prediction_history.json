@@ -391,32 +391,38 @@
     "status": "final"
   },
   "401909972": {
-    "actual_winner": null,
+    "actual_winner": "Brooklyn Nets",
+    "away_score": 145.0,
     "away_team": "Brooklyn Nets",
-    "correct": null,
+    "checked_at": "2026-11-12T04:40:35.224392+00:00",
+    "correct": false,
     "estimated_probability": 0.6447,
     "game_id": "401909972",
     "game_time": "2026-11-12T01:00Z",
+    "home_score": 111.0,
     "home_team": "New Orleans Pelicans",
     "model": "recent-form-heuristic-v1",
     "predicted_margin_home": 6.85,
     "predicted_winner": "New Orleans Pelicans",
     "saved_at": "2026-11-09T09:02:02.041559+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909973": {
-    "actual_winner": null,
+    "actual_winner": "Orlando Magic",
+    "away_score": 123.0,
     "away_team": "Orlando Magic",
-    "correct": null,
+    "checked_at": "2026-11-12T04:40:35.224392+00:00",
+    "correct": true,
     "estimated_probability": 0.5063,
     "game_id": "401909973",
     "game_time": "2026-11-12T02:00Z",
+    "home_score": 108.0,
     "home_team": "Utah Jazz",
     "model": "recent-form-heuristic-v1",
     "predicted_margin_home": -0.29,
     "predicted_winner": "Orlando Magic",
     "saved_at": "2026-11-09T20:46:39.889115+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909974": {
     "actual_winner": null,
