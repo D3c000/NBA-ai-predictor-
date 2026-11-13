@@ -476,32 +476,38 @@
     "status": "final"
   },
   "401909977": {
-    "actual_winner": null,
+    "actual_winner": "Detroit Pistons",
+    "away_score": 144.0,
     "away_team": "Detroit Pistons",
-    "correct": null,
+    "checked_at": "2026-11-13T03:50:22.084143+00:00",
+    "correct": true,
     "estimated_probability": 0.6144,
     "game_id": "401909977",
     "game_time": "2026-11-13T00:00Z",
+    "home_score": 140.0,
     "home_team": "Washington Wizards",
     "model": "recent-form-heuristic-v1",
     "predicted_margin_home": -5.35,
     "predicted_winner": "Detroit Pistons",
     "saved_at": "2026-11-10T08:52:34.443191+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909978": {
-    "actual_winner": null,
+    "actual_winner": "Minnesota Timberwolves",
+    "away_score": 94.0,
     "away_team": "Dallas Mavericks",
-    "correct": null,
+    "checked_at": "2026-11-13T03:50:22.084143+00:00",
+    "correct": true,
     "estimated_probability": 0.6184,
     "game_id": "401909978",
     "game_time": "2026-11-13T01:00Z",
+    "home_score": 133.0,
     "home_team": "Minnesota Timberwolves",
     "model": "recent-form-heuristic-v1",
     "predicted_margin_home": 5.55,
     "predicted_winner": "Minnesota Timberwolves",
     "saved_at": "2026-11-10T08:52:34.443205+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909979": {
     "actual_winner": null,
