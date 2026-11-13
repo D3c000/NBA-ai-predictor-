@@ -459,18 +459,21 @@
     "status": "final"
   },
   "401909976": {
-    "actual_winner": null,
+    "actual_winner": "Philadelphia 76ers",
+    "away_score": 112.0,
     "away_team": "Toronto Raptors",
-    "correct": null,
+    "checked_at": "2026-11-13T02:57:27.968725+00:00",
+    "correct": true,
     "estimated_probability": 0.5409,
     "game_id": "401909976",
     "game_time": "2026-11-13T00:00Z",
+    "home_score": 123.0,
     "home_team": "Philadelphia 76ers",
     "model": "recent-form-heuristic-v1",
     "predicted_margin_home": 1.89,
     "predicted_winner": "Philadelphia 76ers",
     "saved_at": "2026-11-10T08:52:34.443165+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909977": {
     "actual_winner": null,
