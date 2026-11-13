@@ -510,17 +510,20 @@
     "status": "final"
   },
   "401909979": {
-    "actual_winner": null,
+    "actual_winner": "Phoenix Suns",
+    "away_score": 96.0,
     "away_team": "Charlotte Hornets",
-    "correct": null,
+    "checked_at": "2026-11-13T04:51:55.654612+00:00",
+    "correct": true,
     "estimated_probability": 0.5799,
     "game_id": "401909979",
     "game_time": "2026-11-13T02:00Z",
+    "home_score": 101.0,
     "home_team": "Phoenix Suns",
     "model": "recent-form-heuristic-v1",
     "predicted_margin_home": 3.71,
     "predicted_winner": "Phoenix Suns",
     "saved_at": "2026-11-10T08:52:34.443216+00:00",
-    "status": "pending"
+    "status": "final"
   }
 }
