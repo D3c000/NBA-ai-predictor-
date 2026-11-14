@@ -1,17 +1,20 @@
 {
   "401909297": {
-    "actual_winner": null,
+    "actual_winner": "Orlando Magic",
+    "away_score": 99.0,
     "away_team": "Milwaukee Bucks",
-    "correct": null,
+    "checked_at": "2026-11-14T03:22:59.851662+00:00",
+    "correct": true,
     "estimated_probability": 0.6985,
     "game_id": "401909297",
     "game_time": "2026-11-14T00:00Z",
+    "home_score": 107.0,
     "home_team": "Orlando Magic",
     "model": "recency-weighted-v2",
     "predicted_margin_home": 9.66,
     "predicted_winner": "Orlando Magic",
     "saved_at": "2026-11-13T11:26:35.659891+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909299": {
     "actual_winner": null,
