@@ -68,18 +68,21 @@
     "status": "final"
   },
   "401909303": {
-    "actual_winner": null,
+    "actual_winner": "Portland Trail Blazers",
+    "away_score": 120.0,
     "away_team": "Portland Trail Blazers",
-    "correct": null,
+    "checked_at": "2026-11-14T06:16:49.631878+00:00",
+    "correct": true,
     "estimated_probability": 0.6551,
     "game_id": "401909303",
     "game_time": "2026-11-14T03:00Z",
+    "home_score": 107.0,
     "home_team": "Sacramento Kings",
     "model": "recency-weighted-v2",
     "predicted_margin_home": -7.38,
     "predicted_winner": "Portland Trail Blazers",
     "saved_at": "2026-11-13T11:26:35.659952+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909949": {
     "actual_winner": "Boston Celtics",
