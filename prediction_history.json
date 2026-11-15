@@ -612,32 +612,38 @@
     "status": "final"
   },
   "401909980": {
-    "actual_winner": null,
+    "actual_winner": "Denver Nuggets",
+    "away_score": 116.0,
     "away_team": "Denver Nuggets",
-    "correct": null,
+    "checked_at": "2026-11-15T03:33:56.551341+00:00",
+    "correct": true,
     "estimated_probability": 0.6662,
     "game_id": "401909980",
     "game_time": "2026-11-15T00:00Z",
+    "home_score": 108.0,
     "home_team": "New Orleans Pelicans",
     "model": "recency-weighted-v2",
     "predicted_margin_home": -7.95,
     "predicted_winner": "Denver Nuggets",
     "saved_at": "2026-11-14T11:36:54.857024+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909981": {
-    "actual_winner": null,
+    "actual_winner": "Cleveland Cavaliers",
+    "away_score": 117.0,
     "away_team": "Dallas Mavericks",
-    "correct": null,
+    "checked_at": "2026-11-15T03:33:56.551341+00:00",
+    "correct": true,
     "estimated_probability": 0.5411,
     "game_id": "401909981",
     "game_time": "2026-11-15T00:30Z",
+    "home_score": 127.0,
     "home_team": "Cleveland Cavaliers",
     "model": "recency-weighted-v2",
     "predicted_margin_home": 1.9,
     "predicted_winner": "Cleveland Cavaliers",
     "saved_at": "2026-11-14T11:36:54.857043+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909982": {
     "actual_winner": null,
@@ -654,31 +660,37 @@
     "status": "pending"
   },
   "401909983": {
-    "actual_winner": null,
+    "actual_winner": "Memphis Grizzlies",
+    "away_score": 110.0,
     "away_team": "Brooklyn Nets",
-    "correct": null,
+    "checked_at": "2026-11-15T03:33:56.551341+00:00",
+    "correct": true,
     "estimated_probability": 0.6619,
     "game_id": "401909983",
     "game_time": "2026-11-15T01:00Z",
+    "home_score": 129.0,
     "home_team": "Memphis Grizzlies",
     "model": "recency-weighted-v2",
     "predicted_margin_home": 7.73,
     "predicted_winner": "Memphis Grizzlies",
     "saved_at": "2026-11-14T11:36:54.857063+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909984": {
-    "actual_winner": null,
+    "actual_winner": "Chicago Bulls",
+    "away_score": 117.0,
     "away_team": "Chicago Bulls",
-    "correct": null,
+    "checked_at": "2026-11-15T03:33:56.551341+00:00",
+    "correct": false,
     "estimated_probability": 0.8,
     "game_id": "401909984",
     "game_time": "2026-11-15T01:00Z",
+    "home_score": 106.0,
     "home_team": "Minnesota Timberwolves",
     "model": "recency-weighted-v2",
     "predicted_margin_home": 15.94,
     "predicted_winner": "Minnesota Timberwolves",
     "saved_at": "2026-11-14T11:36:54.857073+00:00",
-    "status": "pending"
+    "status": "final"
   }
 }
