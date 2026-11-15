@@ -646,18 +646,21 @@
     "status": "final"
   },
   "401909982": {
-    "actual_winner": null,
+    "actual_winner": "Miami Heat",
+    "away_score": 117.0,
     "away_team": "Detroit Pistons",
-    "correct": null,
+    "checked_at": "2026-11-15T04:38:42.978359+00:00",
+    "correct": false,
     "estimated_probability": 0.5439,
     "game_id": "401909982",
     "game_time": "2026-11-15T01:00Z",
+    "home_score": 137.0,
     "home_team": "Miami Heat",
     "model": "recency-weighted-v2",
     "predicted_margin_home": -2.02,
     "predicted_winner": "Detroit Pistons",
     "saved_at": "2026-11-14T11:36:54.857053+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909983": {
     "actual_winner": "Memphis Grizzlies",
