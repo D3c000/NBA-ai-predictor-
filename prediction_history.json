@@ -731,18 +731,21 @@
     "status": "final"
   },
   "401909991": {
-    "actual_winner": null,
+    "actual_winner": "Houston Rockets",
+    "away_score": 147.0,
     "away_team": "Houston Rockets",
-    "correct": null,
+    "checked_at": "2026-11-16T02:41:09.748486+00:00",
+    "correct": true,
     "estimated_probability": 0.6455,
     "game_id": "401909991",
     "game_time": "2026-11-16T00:00Z",
+    "home_score": 119.0,
     "home_team": "Washington Wizards",
     "model": "recency-weighted-v2",
     "predicted_margin_home": -6.89,
     "predicted_winner": "Houston Rockets",
     "saved_at": "2026-11-15T11:11:40.001629+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909992": {
     "actual_winner": null,
