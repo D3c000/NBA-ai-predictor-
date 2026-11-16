@@ -748,18 +748,21 @@
     "status": "final"
   },
   "401909992": {
-    "actual_winner": null,
+    "actual_winner": "Atlanta Hawks",
+    "away_score": 113.0,
     "away_team": "Atlanta Hawks",
-    "correct": null,
+    "checked_at": "2026-11-16T03:47:21.401884+00:00",
+    "correct": true,
     "estimated_probability": 0.6227,
     "game_id": "401909992",
     "game_time": "2026-11-16T01:00Z",
+    "home_score": 106.0,
     "home_team": "Milwaukee Bucks",
     "model": "recency-weighted-v2",
     "predicted_margin_home": -5.76,
     "predicted_winner": "Atlanta Hawks",
     "saved_at": "2026-11-15T11:11:40.001651+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909993": {
     "actual_winner": null,
