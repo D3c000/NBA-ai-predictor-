@@ -697,32 +697,38 @@
     "status": "final"
   },
   "401909988": {
-    "actual_winner": null,
+    "actual_winner": "San Antonio Spurs",
+    "away_score": 110.0,
     "away_team": "San Antonio Spurs",
-    "correct": null,
+    "checked_at": "2026-11-16T01:38:12.642127+00:00",
+    "correct": true,
     "estimated_probability": 0.7671,
     "game_id": "401909988",
     "game_time": "2026-11-15T22:00Z",
+    "home_score": 102.0,
     "home_team": "Utah Jazz",
     "model": "recency-weighted-v2",
     "predicted_margin_home": -13.71,
     "predicted_winner": "San Antonio Spurs",
     "saved_at": "2026-11-15T11:11:40.001583+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909989": {
-    "actual_winner": null,
+    "actual_winner": "Boston Celtics",
+    "away_score": 94.0,
     "away_team": "Dallas Mavericks",
-    "correct": null,
+    "checked_at": "2026-11-16T01:38:12.642127+00:00",
+    "correct": true,
     "estimated_probability": 0.6958,
     "game_id": "401909989",
     "game_time": "2026-11-15T23:00Z",
+    "home_score": 131.0,
     "home_team": "Boston Celtics",
     "model": "recency-weighted-v2",
     "predicted_margin_home": 9.51,
     "predicted_winner": "Boston Celtics",
     "saved_at": "2026-11-15T11:11:40.001599+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909991": {
     "actual_winner": null,
