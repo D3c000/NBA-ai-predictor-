@@ -810,18 +810,21 @@
     "status": "pending"
   },
   "401909996": {
-    "actual_winner": null,
+    "actual_winner": "Memphis Grizzlies",
+    "away_score": 136.0,
     "away_team": "Memphis Grizzlies",
-    "correct": null,
+    "checked_at": "2026-11-17T02:32:23.177110+00:00",
+    "correct": true,
     "estimated_probability": 0.6938,
     "game_id": "401909996",
     "game_time": "2026-11-17T00:00Z",
+    "home_score": 120.0,
     "home_team": "Washington Wizards",
     "model": "recency-weighted-v2",
     "predicted_margin_home": -9.41,
     "predicted_winner": "Memphis Grizzlies",
     "saved_at": "2026-11-16T11:10:46.722271+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401910000": {
     "actual_winner": null,
