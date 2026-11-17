@@ -850,17 +850,20 @@
     "status": "final"
   },
   "401910001": {
-    "actual_winner": null,
+    "actual_winner": "Phoenix Suns",
+    "away_score": 117.0,
     "away_team": "Phoenix Suns",
-    "correct": null,
+    "checked_at": "2026-11-17T04:39:57.513639+00:00",
+    "correct": false,
     "estimated_probability": 0.6083,
     "game_id": "401910001",
     "game_time": "2026-11-17T02:00Z",
+    "home_score": 104.0,
     "home_team": "Denver Nuggets",
     "model": "recency-weighted-v2",
     "predicted_margin_home": 5.06,
     "predicted_winner": "Denver Nuggets",
     "saved_at": "2026-11-16T11:10:46.722328+00:00",
-    "status": "pending"
+    "status": "final"
   }
 }
