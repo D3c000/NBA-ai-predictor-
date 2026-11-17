@@ -782,32 +782,38 @@
     "status": "final"
   },
   "401909994": {
-    "actual_winner": null,
+    "actual_winner": "Orlando Magic",
+    "away_score": 115.0,
     "away_team": "Orlando Magic",
-    "correct": null,
+    "checked_at": "2026-11-17T03:33:47.222264+00:00",
+    "correct": false,
     "estimated_probability": 0.7426,
     "game_id": "401909994",
     "game_time": "2026-11-17T00:00Z",
+    "home_score": 105.0,
     "home_team": "Boston Celtics",
     "model": "recency-weighted-v2",
     "predicted_margin_home": 12.18,
     "predicted_winner": "Boston Celtics",
     "saved_at": "2026-11-16T11:10:46.722236+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909995": {
-    "actual_winner": null,
+    "actual_winner": "Cleveland Cavaliers",
+    "away_score": 115.0,
     "away_team": "Chicago Bulls",
-    "correct": null,
+    "checked_at": "2026-11-17T03:33:47.222264+00:00",
+    "correct": true,
     "estimated_probability": 0.645,
     "game_id": "401909995",
     "game_time": "2026-11-17T00:00Z",
+    "home_score": 126.0,
     "home_team": "Cleveland Cavaliers",
     "model": "recency-weighted-v2",
     "predicted_margin_home": 6.87,
     "predicted_winner": "Cleveland Cavaliers",
     "saved_at": "2026-11-16T11:10:46.722259+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909996": {
     "actual_winner": "Memphis Grizzlies",
@@ -827,18 +833,21 @@
     "status": "final"
   },
   "401910000": {
-    "actual_winner": null,
+    "actual_winner": "New Orleans Pelicans",
+    "away_score": 94.0,
     "away_team": "Golden State Warriors",
-    "correct": null,
+    "checked_at": "2026-11-17T03:33:47.222264+00:00",
+    "correct": false,
     "estimated_probability": 0.685,
     "game_id": "401910000",
     "game_time": "2026-11-17T01:00Z",
+    "home_score": 115.0,
     "home_team": "New Orleans Pelicans",
     "model": "recency-weighted-v2",
     "predicted_margin_home": -8.93,
     "predicted_winner": "Golden State Warriors",
     "saved_at": "2026-11-16T11:10:46.722314+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401910001": {
     "actual_winner": null,
