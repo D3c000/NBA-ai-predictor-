@@ -932,17 +932,20 @@
     "status": "pending"
   },
   "401910006": {
-    "actual_winner": null,
+    "actual_winner": "Utah Jazz",
+    "away_score": 132.0,
     "away_team": "Utah Jazz",
-    "correct": null,
+    "checked_at": "2026-11-18T05:56:03.517094+00:00",
+    "correct": false,
     "estimated_probability": 0.6288,
     "game_id": "401910006",
     "game_time": "2026-11-18T03:30Z",
+    "home_score": 107.0,
     "home_team": "LA Clippers",
     "model": "recency-weighted-v2",
     "predicted_margin_home": 6.06,
     "predicted_winner": "LA Clippers",
     "saved_at": "2026-11-17T11:31:14.224182+00:00",
-    "status": "pending"
+    "status": "final"
   }
 }
