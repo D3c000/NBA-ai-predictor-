@@ -15,6 +15,401 @@ NZ = ZoneInfo("Pacific/Auckland")
 EAST = ZoneInfo("America/New_York")
 ODDS_URL = "https://api.the-odds-api.com/v4/sports/basketball_nba/odds"
 
+
+# ==============================================
+# NBA AI PREDICTOR 2.0 — PREMIUM DESIGN UPGRADE
+# ==============================================
+# Paste after your existing st.set_page_config().
+# Requires: import streamlit as st
+# Does not replace your prediction or odds logic.
+
+import base64
+
+def nba_design_svg():
+    artwork = """
+    <svg xmlns="http://www.w3.org/2000/svg"
+         width="800" height="420" viewBox="0 0 800 420">
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+          <stop stop-color="#142b51"/>
+          <stop offset="1" stop-color="#09111f"/>
+        </linearGradient>
+        <radialGradient id="ball" cx=".32" cy=".25" r=".8">
+          <stop stop-color="#ffb05b"/>
+          <stop offset=".55" stop-color="#f97316"/>
+          <stop offset="1" stop-color="#b83d08"/>
+        </radialGradient>
+      </defs>
+      <rect width="800" height="420" rx="30" fill="url(#bg)"/>
+      <g stroke="#304768" stroke-width="3" fill="none" opacity=".5">
+        <path d="M0 90H800M0 330H800M400 0V420"/>
+        <circle cx="400" cy="210" r="155"/>
+        <rect x="40" y="55" width="720" height="310" rx="10"/>
+        <path d="M40 130H170V290H40M760 130H630V290H760"/>
+      </g>
+      <circle cx="540" cy="203" r="155" fill="#f97316"
+              opacity=".12"/>
+      <circle cx="540" cy="203" r="118"
+              fill="url(#ball)" stroke="#1d130d" stroke-width="6"/>
+      <g fill="none" stroke="#29160d"
+         stroke-width="9" stroke-linecap="round">
+        <path d="M422 203H658M540 85V321"/>
+        <path d="M457 118Q580 204 457 290"/>
+        <path d="M623 118Q500 204 623 290"/>
+      </g>
+      <g fill="#ff9a45" opacity=".75">
+        <circle cx="700" cy="70" r="5"/>
+        <circle cx="315" cy="325" r="4"/>
+        <circle cx="720" cy="320" r="3"/>
+      </g>
+    </svg>
+    """
+    return base64.b64encode(artwork.encode()).decode()
+
+
+NBA_ART = nba_design_svg()
+
+st.markdown("""
+<style>
+:root {
+    --nba-bg: #080e1b;
+    --nba-card: #121d30;
+    --nba-border: #253652;
+    --nba-orange: #ff862e;
+    --nba-blue: #438bff;
+    --nba-green: #27d995;
+    --nba-text: #f8fafc;
+    --nba-muted: #a4b2c9;
+}
+
+/* Main screen */
+.stApp {
+    background:
+        radial-gradient(
+            ellipse at 80% 0%,
+            #14294b 0%,
+            transparent 42%
+        ),
+        linear-gradient(160deg, #080e1b, #0e1728);
+    color: var(--nba-text);
+}
+
+.block-container {
+    padding-top: 1.3rem;
+    padding-bottom: 3rem;
+    max-width: 1200px;
+}
+
+h1, h2, h3 {
+    color: #ffffff !important;
+    letter-spacing: -0.5px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background: #0b1526;
+    border-right: 1px solid #263651;
+}
+
+section[data-testid="stSidebar"] p {
+    color: #dbe6fa;
+}
+
+section[data-testid="stSidebar"] [role="radiogroup"] label {
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 5px;
+}
+
+/* Streamlit containers */
+div[data-testid="stVerticalBlockBorderWrapper"] {
+    border-color: var(--nba-border);
+    border-radius: 18px;
+}
+
+/* Metrics */
+div[data-testid="stMetric"] {
+    background: linear-gradient(145deg, #192843, #111b2d);
+    padding: 18px;
+    border: 1px solid #293d5e;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.15);
+}
+
+div[data-testid="stMetricLabel"] {
+    color: #b7c6da;
+}
+
+div[data-testid="stMetricValue"] {
+    color: #ffffff;
+    font-weight: 800;
+}
+
+/* Buttons */
+.stButton > button,
+.stDownloadButton > button,
+.stFormSubmitButton > button {
+    background: linear-gradient(120deg, #ff862e, #e95b1c);
+    color: white;
+    font-weight: 750;
+    border: 0;
+    border-radius: 12px;
+    min-height: 44px;
+    box-shadow: 0 5px 18px rgba(249,115,22,.18);
+}
+
+.stButton > button:hover,
+.stDownloadButton > button:hover {
+    color: white;
+    border: 0;
+    background: #fa9a49;
+}
+
+/* Tabs */
+button[data-baseweb="tab"] {
+    color: #a7b6ca;
+    font-weight: 650;
+    border-radius: 8px;
+}
+
+button[data-baseweb="tab"][aria-selected="true"] {
+    color: #ff9b4c;
+}
+
+/* Tables */
+div[data-testid="stDataFrame"] {
+    border: 1px solid var(--nba-border);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+/* Inputs */
+div[data-baseweb="select"] > div,
+div[data-baseweb="input"] > div {
+    background: #152238;
+    border-color: #344662;
+    border-radius: 12px;
+}
+
+/* Alerts */
+div[data-testid="stAlert"] {
+    border-radius: 13px;
+}
+
+/* Premium hero */
+.nba-hero {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(120deg, #152849, #0c1729);
+    border: 1px solid #304465;
+    border-radius: 24px;
+    padding: 26px;
+    margin-bottom: 22px;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nba-hero-content {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+}
+
+.nba-kicker {
+    display: inline-block;
+    color: #ffac70;
+    background: #ff862e20;
+    border: 1px solid #ff862e55;
+    padding: 6px 12px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 13px;
+}
+
+.nba-headline {
+    color: white;
+    font-size: clamp(28px, 4vw, 45px);
+    font-weight: 900;
+    line-height: 1.12;
+    letter-spacing: -1px;
+}
+
+.nba-headline span {
+    color: #ff9144;
+}
+
+.nba-description {
+    color: #b8c8de;
+    font-size: 14px;
+    margin-top: 12px;
+    max-width: 460px;
+}
+
+.nba-hero-image {
+    width: 40%;
+    max-width: 340px;
+    border-radius: 18px;
+    object-fit: cover;
+}
+
+.nba-section-label {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+    color: #ff9b4c;
+    margin: 18px 0 9px;
+}
+
+.nba-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.nba-feature {
+    background: linear-gradient(145deg, #192944, #121e31);
+    border: 1px solid #293e5f;
+    border-radius: 16px;
+    padding: 16px 12px;
+}
+
+.nba-feature-icon {
+    font-size: 23px;
+    margin-bottom: 9px;
+}
+
+.nba-feature-name {
+    font-weight: 800;
+    color: white;
+    font-size: 13px;
+}
+
+.nba-feature-desc {
+    font-size: 11px;
+    color: #9eafc8;
+    margin-top: 5px;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+    .block-container {
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 12px;
+    }
+
+    .nba-hero {
+        padding: 19px;
+        border-radius: 19px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nba-hero-image {
+        width: 100%;
+        max-width: none;
+        max-height: 150px;
+        object-fit: cover;
+    }
+
+    .nba-feature-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .nba-headline {
+        font-size: 29px;
+    }
+
+    .nba-feature {
+        padding: 13px;
+    }
+
+    div[data-testid="stMetric"] {
+        padding: 12px;
+    }
+}
+</style>
+""", unsafe_allow_html=True)
+
+
+# Branding — appears above your existing app content.
+st.markdown(
+    f"""
+    <div class="nba-hero">
+      <div class="nba-hero-content">
+        <div class="nba-kicker">
+          BASKETBALL INTELLIGENCE PLATFORM
+        </div>
+        <div class="nba-headline">
+          NBA AI<br><span>PREDICTOR 2.0</span>
+        </div>
+        <div class="nba-description">
+          Smarter game analysis. Player projections.
+          Bookmaker comparisons. Data-driven insights.
+        </div>
+      </div>
+      <img class="nba-hero-image"
+           src="data:image/svg+xml;base64,{NBA_ART}"
+           alt="Basketball court artwork"/>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+# Feature cards with no invented performance statistics.
+st.markdown(
+    """
+    <div class="nba-section-label">YOUR ANALYTICS HUB</div>
+    <div class="nba-feature-grid">
+      <div class="nba-feature">
+        <div class="nba-feature-icon">🏀</div>
+        <div class="nba-feature-name">Games</div>
+        <div class="nba-feature-desc">
+          Matchup predictions
+        </div>
+      </div>
+      <div class="nba-feature">
+        <div class="nba-feature-icon">🎯</div>
+        <div class="nba-feature-name">Player Props</div>
+        <div class="nba-feature-desc">
+          Player projections
+        </div>
+      </div>
+      <div class="nba-feature">
+        <div class="nba-feature-icon">📈</div>
+        <div class="nba-feature-name">Odds & Value</div>
+        <div class="nba-feature-desc">
+          Market comparisons
+        </div>
+      </div>
+      <div class="nba-feature">
+        <div class="nba-feature-icon">🏆</div>
+        <div class="nba-feature-name">Performance</div>
+        <div class="nba-feature-desc">
+          Prediction history
+        </div>
+      </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+# ==============================================
+# KEEP ALL YOUR ORIGINAL APP CODE BELOW THIS.
+# Your existing pages, APIs, predictions, odds,
+# and tracking should remain in place.
+# ==============================================
+
+
 st.markdown("""<style>
 [data-testid="stSidebar"] {min-width: 210px}
 [data-testid="stSidebarNav"] {padding-top: 0.5rem}
