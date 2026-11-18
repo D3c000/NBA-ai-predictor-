@@ -918,18 +918,21 @@
     "status": "final"
   },
   "401910005": {
-    "actual_winner": null,
+    "actual_winner": "Los Angeles Lakers",
+    "away_score": 114.0,
     "away_team": "Charlotte Hornets",
-    "correct": null,
+    "checked_at": "2026-11-18T07:04:48.594478+00:00",
+    "correct": true,
     "estimated_probability": 0.746,
     "game_id": "401910005",
     "game_time": "2026-11-18T04:00Z",
+    "home_score": 118.0,
     "home_team": "Los Angeles Lakers",
     "model": "recency-weighted-v2",
     "predicted_margin_home": 12.39,
     "predicted_winner": "Los Angeles Lakers",
     "saved_at": "2026-11-17T11:31:14.224196+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401910006": {
     "actual_winner": "Utah Jazz",
