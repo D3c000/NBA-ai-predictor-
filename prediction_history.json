@@ -1035,5 +1035,61 @@
     "predicted_winner": "Los Angeles Lakers",
     "saved_at": "2026-11-18T11:39:20.127126+00:00",
     "status": "final"
+  },
+  "401910019": {
+    "actual_winner": null,
+    "away_team": "Golden State Warriors",
+    "correct": null,
+    "estimated_probability": 0.6696,
+    "game_id": "401910019",
+    "game_time": "2026-11-20T01:00Z",
+    "home_team": "Memphis Grizzlies",
+    "model": "recency-weighted-v2",
+    "predicted_margin_home": 8.12,
+    "predicted_winner": "Memphis Grizzlies",
+    "saved_at": "2026-11-19T11:37:47.603695+00:00",
+    "status": "pending"
+  },
+  "401910020": {
+    "actual_winner": null,
+    "away_team": "Portland Trail Blazers",
+    "correct": null,
+    "estimated_probability": 0.6403,
+    "game_id": "401910020",
+    "game_time": "2026-11-20T01:00Z",
+    "home_team": "Milwaukee Bucks",
+    "model": "recency-weighted-v2",
+    "predicted_margin_home": -6.63,
+    "predicted_winner": "Portland Trail Blazers",
+    "saved_at": "2026-11-19T11:37:47.603721+00:00",
+    "status": "pending"
+  },
+  "401910021": {
+    "actual_winner": null,
+    "away_team": "New York Knicks",
+    "correct": null,
+    "estimated_probability": 0.5406,
+    "game_id": "401910021",
+    "game_time": "2026-11-20T01:00Z",
+    "home_team": "Minnesota Timberwolves",
+    "model": "recency-weighted-v2",
+    "predicted_margin_home": 1.87,
+    "predicted_winner": "Minnesota Timberwolves",
+    "saved_at": "2026-11-19T11:37:47.603736+00:00",
+    "status": "pending"
+  },
+  "401910022": {
+    "actual_winner": null,
+    "away_team": "LA Clippers",
+    "correct": null,
+    "estimated_probability": 0.7578,
+    "game_id": "401910022",
+    "game_time": "2026-11-20T01:00Z",
+    "home_team": "San Antonio Spurs",
+    "model": "recency-weighted-v2",
+    "predicted_margin_home": 13.11,
+    "predicted_winner": "San Antonio Spurs",
+    "saved_at": "2026-11-19T11:37:47.603751+00:00",
+    "status": "pending"
   }
 }
