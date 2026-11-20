@@ -1037,59 +1037,71 @@
     "status": "final"
   },
   "401910019": {
-    "actual_winner": null,
+    "actual_winner": "Memphis Grizzlies",
+    "away_score": 98.0,
     "away_team": "Golden State Warriors",
-    "correct": null,
+    "checked_at": "2026-11-20T03:34:27.510201+00:00",
+    "correct": true,
     "estimated_probability": 0.6696,
     "game_id": "401910019",
     "game_time": "2026-11-20T01:00Z",
+    "home_score": 126.0,
     "home_team": "Memphis Grizzlies",
     "model": "recency-weighted-v2",
     "predicted_margin_home": 8.12,
     "predicted_winner": "Memphis Grizzlies",
     "saved_at": "2026-11-19T11:37:47.603695+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401910020": {
-    "actual_winner": null,
+    "actual_winner": "Portland Trail Blazers",
+    "away_score": 124.0,
     "away_team": "Portland Trail Blazers",
-    "correct": null,
+    "checked_at": "2026-11-20T03:34:27.510201+00:00",
+    "correct": true,
     "estimated_probability": 0.6403,
     "game_id": "401910020",
     "game_time": "2026-11-20T01:00Z",
+    "home_score": 114.0,
     "home_team": "Milwaukee Bucks",
     "model": "recency-weighted-v2",
     "predicted_margin_home": -6.63,
     "predicted_winner": "Portland Trail Blazers",
     "saved_at": "2026-11-19T11:37:47.603721+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401910021": {
-    "actual_winner": null,
+    "actual_winner": "New York Knicks",
+    "away_score": 102.0,
     "away_team": "New York Knicks",
-    "correct": null,
+    "checked_at": "2026-11-20T03:34:27.510201+00:00",
+    "correct": false,
     "estimated_probability": 0.5406,
     "game_id": "401910021",
     "game_time": "2026-11-20T01:00Z",
+    "home_score": 99.0,
     "home_team": "Minnesota Timberwolves",
     "model": "recency-weighted-v2",
     "predicted_margin_home": 1.87,
     "predicted_winner": "Minnesota Timberwolves",
     "saved_at": "2026-11-19T11:37:47.603736+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401910022": {
-    "actual_winner": null,
+    "actual_winner": "San Antonio Spurs",
+    "away_score": 112.0,
     "away_team": "LA Clippers",
-    "correct": null,
+    "checked_at": "2026-11-20T03:34:27.510201+00:00",
+    "correct": true,
     "estimated_probability": 0.7578,
     "game_id": "401910022",
     "game_time": "2026-11-20T01:00Z",
+    "home_score": 124.0,
     "home_team": "San Antonio Spurs",
     "model": "recency-weighted-v2",
     "predicted_margin_home": 13.11,
     "predicted_winner": "San Antonio Spurs",
     "saved_at": "2026-11-19T11:37:47.603751+00:00",
-    "status": "pending"
+    "status": "final"
   }
 }
