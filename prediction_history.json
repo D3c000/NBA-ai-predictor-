@@ -1190,18 +1190,21 @@
     "status": "final"
   },
   "401910023": {
-    "actual_winner": null,
+    "actual_winner": "Philadelphia 76ers",
+    "away_score": 129.0,
     "away_team": "Milwaukee Bucks",
-    "correct": null,
+    "checked_at": "2026-11-21T20:54:52.174099+00:00",
+    "correct": true,
     "estimated_probability": 0.7231,
     "game_id": "401910023",
     "game_time": "2026-11-21T18:00Z",
+    "home_score": 132.0,
     "home_team": "Philadelphia 76ers",
     "model": "recency-weighted-v2",
     "predicted_margin_home": 11.04,
     "predicted_winner": "Philadelphia 76ers",
     "saved_at": "2026-11-21T11:27:34.329433+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401910024": {
     "actual_winner": null,
