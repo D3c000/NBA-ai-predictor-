@@ -85,18 +85,21 @@
     "status": "final"
   },
   "401909305": {
-    "actual_winner": null,
+    "actual_winner": "Atlanta Hawks",
+    "away_score": 97.0,
     "away_team": "Charlotte Hornets",
-    "correct": null,
+    "checked_at": "2026-11-21T02:33:50.740667+00:00",
+    "correct": true,
     "estimated_probability": 0.6442,
     "game_id": "401909305",
     "game_time": "2026-11-21T00:00Z",
+    "home_score": 111.0,
     "home_team": "Atlanta Hawks",
     "model": "recency-weighted-v2",
     "predicted_margin_home": 6.83,
     "predicted_winner": "Atlanta Hawks",
     "saved_at": "2026-11-20T11:39:22.274997+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909308": {
     "actual_winner": null,
