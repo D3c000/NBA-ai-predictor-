@@ -153,18 +153,21 @@
     "status": "final"
   },
   "401909313": {
-    "actual_winner": null,
+    "actual_winner": "Los Angeles Lakers",
+    "away_score": 104.0,
     "away_team": "Sacramento Kings",
-    "correct": null,
+    "checked_at": "2026-11-21T05:39:19.618695+00:00",
+    "correct": true,
     "estimated_probability": 0.7445,
     "game_id": "401909313",
     "game_time": "2026-11-21T03:00Z",
+    "home_score": 106.0,
     "home_team": "Los Angeles Lakers",
     "model": "recency-weighted-v2",
     "predicted_margin_home": 12.3,
     "predicted_winner": "Los Angeles Lakers",
     "saved_at": "2026-11-20T11:39:22.275151+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909949": {
     "actual_winner": "Boston Celtics",
