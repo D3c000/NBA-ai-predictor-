@@ -1258,17 +1258,20 @@
     "status": "final"
   },
   "401910028": {
-    "actual_winner": null,
+    "actual_winner": "Sacramento Kings",
+    "away_score": 96.0,
     "away_team": "Boston Celtics",
-    "correct": null,
+    "checked_at": "2026-11-22T05:51:14.939663+00:00",
+    "correct": false,
     "estimated_probability": 0.7102,
     "game_id": "401910028",
     "game_time": "2026-11-22T03:00Z",
+    "home_score": 97.0,
     "home_team": "Sacramento Kings",
     "model": "recency-weighted-v2",
     "predicted_margin_home": -10.31,
     "predicted_winner": "Boston Celtics",
     "saved_at": "2026-11-21T11:27:34.329496+00:00",
-    "status": "pending"
+    "status": "final"
   }
 }
