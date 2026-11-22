@@ -1275,18 +1275,21 @@
     "status": "final"
   },
   "401910029": {
-    "actual_winner": null,
+    "actual_winner": "Atlanta Hawks",
+    "away_score": 97.0,
     "away_team": "Detroit Pistons",
-    "correct": null,
+    "checked_at": "2026-11-22T23:28:04.927817+00:00",
+    "correct": true,
     "estimated_probability": 0.5296,
     "game_id": "401910029",
     "game_time": "2026-11-22T20:30Z",
+    "home_score": 107.0,
     "home_team": "Atlanta Hawks",
     "model": "recency-weighted-v2",
     "predicted_margin_home": 1.36,
     "predicted_winner": "Atlanta Hawks",
     "saved_at": "2026-11-22T11:27:14.920247+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401910030": {
     "actual_winner": null,
