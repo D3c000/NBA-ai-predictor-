@@ -1292,18 +1292,21 @@
     "status": "final"
   },
   "401910030": {
-    "actual_winner": null,
+    "actual_winner": "Miami Heat",
+    "away_score": 113.0,
     "away_team": "Oklahoma City Thunder",
-    "correct": null,
+    "checked_at": "2026-11-23T01:51:12.766401+00:00",
+    "correct": true,
     "estimated_probability": 0.5805,
     "game_id": "401910030",
     "game_time": "2026-11-22T23:00Z",
+    "home_score": 123.0,
     "home_team": "Miami Heat",
     "model": "recency-weighted-v2",
     "predicted_margin_home": 3.73,
     "predicted_winner": "Miami Heat",
     "saved_at": "2026-11-22T11:27:14.920277+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401910031": {
     "actual_winner": null,
