@@ -1343,17 +1343,20 @@
     "status": "final"
   },
   "401910035": {
-    "actual_winner": null,
+    "actual_winner": "Golden State Warriors",
+    "away_score": 87.0,
     "away_team": "Boston Celtics",
-    "correct": null,
+    "checked_at": "2026-11-23T05:12:07.943738+00:00",
+    "correct": false,
     "estimated_probability": 0.6381,
     "game_id": "401910035",
     "game_time": "2026-11-23T01:30Z",
+    "home_score": 88.0,
     "home_team": "Golden State Warriors",
     "model": "recency-weighted-v2",
     "predicted_margin_home": -6.52,
     "predicted_winner": "Boston Celtics",
     "saved_at": "2026-11-22T11:27:14.920349+00:00",
-    "status": "pending"
+    "status": "final"
   }
 }
