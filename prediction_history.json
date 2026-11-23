@@ -1326,18 +1326,21 @@
     "status": "final"
   },
   "401910034": {
-    "actual_winner": null,
+    "actual_winner": "New York Knicks",
+    "away_score": 106.0,
     "away_team": "Indiana Pacers",
-    "correct": null,
+    "checked_at": "2026-11-23T03:56:04.399518+00:00",
+    "correct": true,
     "estimated_probability": 0.6771,
     "game_id": "401910034",
     "game_time": "2026-11-23T01:00Z",
+    "home_score": 113.0,
     "home_team": "New York Knicks",
     "model": "recency-weighted-v2",
     "predicted_margin_home": 8.51,
     "predicted_winner": "New York Knicks",
     "saved_at": "2026-11-22T11:27:14.920337+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401910035": {
     "actual_winner": null,
