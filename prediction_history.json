@@ -1309,18 +1309,21 @@
     "status": "final"
   },
   "401910031": {
-    "actual_winner": null,
+    "actual_winner": "Washington Wizards",
+    "away_score": 96.0,
     "away_team": "Orlando Magic",
-    "correct": null,
+    "checked_at": "2026-11-23T02:52:00.567676+00:00",
+    "correct": false,
     "estimated_probability": 0.5621,
     "game_id": "401910031",
     "game_time": "2026-11-23T00:00Z",
+    "home_score": 116.0,
     "home_team": "Washington Wizards",
     "model": "recency-weighted-v2",
     "predicted_margin_home": -2.87,
     "predicted_winner": "Orlando Magic",
     "saved_at": "2026-11-22T11:27:14.920293+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401910034": {
     "actual_winner": null,
