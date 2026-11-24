@@ -1360,18 +1360,21 @@
     "status": "final"
   },
   "401910036": {
-    "actual_winner": null,
+    "actual_winner": "Memphis Grizzlies",
+    "away_score": 117.0,
     "away_team": "Memphis Grizzlies",
-    "correct": null,
+    "checked_at": "2026-11-24T02:53:43.168246+00:00",
+    "correct": true,
     "estimated_probability": 0.6719,
     "game_id": "401910036",
     "game_time": "2026-11-24T00:00Z",
+    "home_score": 111.0,
     "home_team": "Charlotte Hornets",
     "model": "recency-weighted-v2",
     "predicted_margin_home": -8.25,
     "predicted_winner": "Memphis Grizzlies",
     "saved_at": "2026-11-23T11:49:19.526527+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401910040": {
     "actual_winner": null,
