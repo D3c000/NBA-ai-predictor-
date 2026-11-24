@@ -1428,17 +1428,20 @@
     "status": "final"
   },
   "401910045": {
-    "actual_winner": null,
+    "actual_winner": "San Antonio Spurs",
+    "away_score": 123.0,
     "away_team": "San Antonio Spurs",
-    "correct": null,
+    "checked_at": "2026-11-24T05:58:25.617015+00:00",
+    "correct": true,
     "estimated_probability": 0.7223,
     "game_id": "401910045",
     "game_time": "2026-11-24T03:00Z",
+    "home_score": 107.0,
     "home_team": "Sacramento Kings",
     "model": "recency-weighted-v2",
     "predicted_margin_home": -10.99,
     "predicted_winner": "San Antonio Spurs",
     "saved_at": "2026-11-23T11:49:19.526700+00:00",
-    "status": "pending"
+    "status": "final"
   }
 }
