@@ -169,6 +169,48 @@
     "saved_at": "2026-11-20T11:39:22.275151+00:00",
     "status": "final"
   },
+  "401909314": {
+    "actual_winner": null,
+    "away_team": "Detroit Pistons",
+    "correct": null,
+    "estimated_probability": 0.5014,
+    "game_id": "401909314",
+    "game_time": "2026-11-25T00:00Z",
+    "home_team": "Orlando Magic",
+    "model": "recency-weighted-v2",
+    "predicted_margin_home": -0.07,
+    "predicted_winner": "Detroit Pistons",
+    "saved_at": "2026-11-24T11:51:56.375924+00:00",
+    "status": "pending"
+  },
+  "401909315": {
+    "actual_winner": null,
+    "away_team": "Boston Celtics",
+    "correct": null,
+    "estimated_probability": 0.5976,
+    "game_id": "401909315",
+    "game_time": "2026-11-25T01:00Z",
+    "home_team": "Washington Wizards",
+    "model": "recency-weighted-v2",
+    "predicted_margin_home": -4.55,
+    "predicted_winner": "Boston Celtics",
+    "saved_at": "2026-11-24T11:51:56.375952+00:00",
+    "status": "pending"
+  },
+  "401909316": {
+    "actual_winner": null,
+    "away_team": "Dallas Mavericks",
+    "correct": null,
+    "estimated_probability": 0.6013,
+    "game_id": "401909316",
+    "game_time": "2026-11-25T03:00Z",
+    "home_team": "Denver Nuggets",
+    "model": "recency-weighted-v2",
+    "predicted_margin_home": 4.72,
+    "predicted_winner": "Denver Nuggets",
+    "saved_at": "2026-11-24T11:51:56.375965+00:00",
+    "status": "pending"
+  },
   "401909949": {
     "actual_winner": "Boston Celtics",
     "away_score": 117.0,
