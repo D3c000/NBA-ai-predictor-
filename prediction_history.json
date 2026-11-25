@@ -170,18 +170,21 @@
     "status": "final"
   },
   "401909314": {
-    "actual_winner": null,
+    "actual_winner": "Detroit Pistons",
+    "away_score": 104.0,
     "away_team": "Detroit Pistons",
-    "correct": null,
+    "checked_at": "2026-11-25T03:09:38.542672+00:00",
+    "correct": true,
     "estimated_probability": 0.5014,
     "game_id": "401909314",
     "game_time": "2026-11-25T00:00Z",
+    "home_score": 86.0,
     "home_team": "Orlando Magic",
     "model": "recency-weighted-v2",
     "predicted_margin_home": -0.07,
     "predicted_winner": "Detroit Pistons",
     "saved_at": "2026-11-24T11:51:56.375924+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909315": {
     "actual_winner": null,
