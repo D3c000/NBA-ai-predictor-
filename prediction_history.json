@@ -187,18 +187,21 @@
     "status": "final"
   },
   "401909315": {
-    "actual_winner": null,
+    "actual_winner": "Boston Celtics",
+    "away_score": 131.0,
     "away_team": "Boston Celtics",
-    "correct": null,
+    "checked_at": "2026-11-25T04:20:47.803477+00:00",
+    "correct": true,
     "estimated_probability": 0.5976,
     "game_id": "401909315",
     "game_time": "2026-11-25T01:00Z",
+    "home_score": 116.0,
     "home_team": "Washington Wizards",
     "model": "recency-weighted-v2",
     "predicted_margin_home": -4.55,
     "predicted_winner": "Boston Celtics",
     "saved_at": "2026-11-24T11:51:56.375952+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909316": {
     "actual_winner": null,
