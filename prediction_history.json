@@ -204,18 +204,21 @@
     "status": "final"
   },
   "401909316": {
-    "actual_winner": null,
+    "actual_winner": "Dallas Mavericks",
+    "away_score": 120.0,
     "away_team": "Dallas Mavericks",
-    "correct": null,
+    "checked_at": "2026-11-25T06:41:40.709828+00:00",
+    "correct": false,
     "estimated_probability": 0.6013,
     "game_id": "401909316",
     "game_time": "2026-11-25T03:00Z",
+    "home_score": 101.0,
     "home_team": "Denver Nuggets",
     "model": "recency-weighted-v2",
     "predicted_margin_home": 4.72,
     "predicted_winner": "Denver Nuggets",
     "saved_at": "2026-11-24T11:51:56.375965+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909949": {
     "actual_winner": "Boston Celtics",
