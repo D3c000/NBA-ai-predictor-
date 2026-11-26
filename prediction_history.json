@@ -221,32 +221,38 @@
     "status": "final"
   },
   "401909318": {
-    "actual_winner": null,
+    "actual_winner": "Chicago Bulls",
+    "away_score": 107.0,
     "away_team": "Chicago Bulls",
-    "correct": null,
+    "checked_at": "2026-11-26T03:07:38.649709+00:00",
+    "correct": true,
     "estimated_probability": 0.5876,
     "game_id": "401909318",
     "game_time": "2026-11-26T00:00Z",
+    "home_score": 105.0,
     "home_team": "Charlotte Hornets",
     "model": "recency-weighted-v2",
     "predicted_margin_home": -4.07,
     "predicted_winner": "Chicago Bulls",
     "saved_at": "2026-11-25T11:42:00.431268+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909319": {
-    "actual_winner": null,
+    "actual_winner": "New York Knicks",
+    "away_score": 102.0,
     "away_team": "Cleveland Cavaliers",
-    "correct": null,
+    "checked_at": "2026-11-26T03:07:38.649709+00:00",
+    "correct": true,
     "estimated_probability": 0.6247,
     "game_id": "401909319",
     "game_time": "2026-11-26T00:30Z",
+    "home_score": 121.0,
     "home_team": "New York Knicks",
     "model": "recency-weighted-v2",
     "predicted_margin_home": 5.86,
     "predicted_winner": "New York Knicks",
     "saved_at": "2026-11-25T11:42:00.431288+00:00",
-    "status": "pending"
+    "status": "final"
   },
   "401909321": {
     "actual_winner": null,
